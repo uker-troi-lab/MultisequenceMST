@@ -1,0 +1,37 @@
+# Dataset and Model Selection
+dataset: 'DWI'
+model: 'DinoV2ClassifierSlice'
+
+# Evaluation arguments
+run_dir: './runs'
+run_folder: 'DWI/DinoV2ClassifierSlice_vDCEv2'
+output_dir: './attention_output'
+get_attention: true
+use_tta: false
+
+# Dataset parameters
+dataset_params:
+  path_img: "/path/to/your/processed/images"
+  path_csv: "your_attention_dataset.csv"
+  image_resize: [224, 224, 38]
+  image_crop: [224, 224, 38]
+  sequences: ["t1"]
+  fold: 0
+  random_center: false
+  flip: false
+  noise: false
+  random_rotate: false
+
+# Model parameters
+model_params:
+  model_size: 's'
+  pretrained: true
+  slice_fusion: 'transformer'
+  use_slice_pos_emb: true
+  freeze: true
+  sequence: false
+  seq_ch: 3
+
+# Other parameters
+batch_size: 1
+num_workers: 4

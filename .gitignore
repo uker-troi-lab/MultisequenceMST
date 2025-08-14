@@ -1,0 +1,139 @@
+# Multi-sequence MST Project .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch model files
+*.pth
+*.pt
+*.ckpt
+
+# Training outputs and results
+runs/
+results/
+cross_val_results/
+cross_val_results_*/
+results_crossvalidate/
+test_cross_val_results/
+delong_fdr_results/
+attention_output/
+attention_maps/
+attention_maps_*/
+
+# Weights & Biases
+wandb/
+
+# Data files (keep only the example)
+*.csv
+!example_dataset_structure.csv
+
+# Large data directories
+data/
+datasets/
+MSTData/
+DataBanks/
+MSTProcessed/
+MSTVDCEProcessed/
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Configuration files with sensitive paths (keep templates)
+# Uncomment if you want to ignore personal configs:
+# config.yaml
+# attention_config.yaml
+
+# Output images and visualizations
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+# Uncomment if you want to keep some images:
+# !docs/*.png
+# !examples/*.png
+
+# Compiled documentation
+docs/_build/
+
+# Test files and temporary scripts
+test_*.py
+temp_*.py
+debug_*.py
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Specific to this project structure
+# (based on current files and directories)
+
+# Keep the core structure but ignore outputs
+# mst/ - keep (core framework)
+# helpers/ - keep (essential utilities)  
+# scripts/ - keep (preprocessing)
+
+# But ignore any generated content in these directories
+mst/**/*.pyc
+helpers/**/*.pyc
+scripts/**/*.pyc
+
+# Ignore any data subdirectories that might be created
+mst/data/raw/
+mst/data/processed/
+helpers/temp/
+scripts/temp/

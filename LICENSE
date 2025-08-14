@@ -1,0 +1,48 @@
+MIT License
+
+Copyright (c) 2024 T.Nguyen, tMRI lab, University Hospital Erlangen, FAU
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+
+ATTRIBUTION NOTICE
+
+This project extends the Medical Slice Transformer (MST) framework:
+
+Original MST Framework:
+Copyright (c) Müller-Franzes et al.
+Repository: https://github.com/mueller-franzes/MST
+Paper: https://arxiv.org/abs/2411.15802
+Licensed under MIT License
+
+Components from MST (modified/extended):
+- mst/ directory structure and core implementations
+- mst/models/dino.py - DinoV2 classifier (extended for multi-sequence)
+- mst/data/ - Dataset base classes (extended)
+- Attention visualization approach (heavily modified)
+- Duke dataset integration approach (heavily modified)
+
+Our Main Contributions:
+- Multi-sequence implementation for breast MRI classification
+- Cross-validation framework with fold-based statistics
+- Statistical analysis pipeline (DeLong's test with FDR correction)
+- Training scripts and configuration management
+
+Both the original MST framework and our extensions are licensed under the MIT License.

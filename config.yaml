@@ -1,0 +1,43 @@
+# Dataset and Model Selection
+dataset: 'DWI'  # choices: ['DUKE', 'LIDC', 'MRNet', 'DWI']
+model: 'DinoV2ClassifierSlice'  # choices: ['DinoV2ClassifierSlice']
+path_root_output: './runs'
+
+# Dataset parameters
+dataset_params:
+  path_img: "/path/to/your/processed/images"
+  path_csv: "your_dataset_splits.csv"
+  image_resize: [224, 224, 38]  # DINOv2 compatible size
+  image_crop: [224, 224, 38]    # Final size after cropping
+  sequences: ["t1"]
+  fold: 0
+  random_center: true
+  flip: true
+  noise: true
+  random_rotate: true
+
+# Model parameters
+model_params:
+  model_size: 's'  # choices: ['s', 'b', 'l', 'g'] for small, base, large, giant
+  pretrained: true
+  slice_fusion: 'transformer'  # choices: ['transformer', 'linear', 'average']
+  use_slice_pos_emb: true
+  freeze: false
+  sequence: false
+  seq_ch: 3
+
+# Training parameters
+batch_size: 4
+accumulate_grad_batches: 1
+max_epochs: 200
+num_workers: 24
+num_train_samples: 2000
+
+# Early stopping parameters
+monitor: "val/AUC_ROC"
+min_delta: 0.0
+patience: 20
+mode: "max"
+
+# Logging
+log_every_n_steps: 50

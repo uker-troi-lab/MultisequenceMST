@@ -1,0 +1,7 @@
+XNAT,side,record_id,BIRADS,dwi0,dwi2,t1,t2,t1n,Split,Fold
+PATIENT_001,left,001_L,1,/path/to/dwi0/001_L.nii.gz,/path/to/dwi2/001_L.nii.gz,/path/to/t1/001_L.nii.gz,/path/to/t2/001_L.nii.gz,/path/to/t1n/001_L.nii.gz,train,0
+PATIENT_002,right,002_R,4,/path/to/dwi0/002_R.nii.gz,/path/to/dwi2/002_R.nii.gz,/path/to/t1/002_R.nii.gz,/path/to/t2/002_R.nii.gz,/path/to/t1n/002_R.nii.gz,train,0
+PATIENT_003,left,003_L,2,/path/to/dwi0/003_L.nii.gz,/path/to/dwi2/003_L.nii.gz,/path/to/t1/003_L.nii.gz,/path/to/t2/003_L.nii.gz,/path/to/t1n/003_L.nii.gz,val,0
+PATIENT_004,right,004_R,5,/path/to/dwi0/004_R.nii.gz,/path/to/dwi2/004_R.nii.gz,/path/to/t1/004_R.nii.gz,/path/to/t2/004_R.nii.gz,/path/to/t1n/004_R.nii.gz,test,0
+PATIENT_005,left,005_L,3,/path/to/dwi0/005_L.nii.gz,/path/to/dwi2/005_L.nii.gz,/path/to/t1/005_L.nii.gz,/path/to/t2/005_L.nii.gz,/path/to/t1n/005_L.nii.gz,train,1
+PATIENT_006,right,006_R,1,/path/to/dwi0/006_R.nii.gz,/path/to/dwi2/006_R.nii.gz,/path/to/t1/006_R.nii.gz,/path/to/t2/006_R.nii.gz,/path/to/t1n/006_R.nii.gz,val,1
